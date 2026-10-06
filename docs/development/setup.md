@@ -150,7 +150,27 @@ taskkill /PID <PID> /F
 
 Ensure MongoDB is running:
 - Local MongoDB: Check if MongoDB service is running
+  ```bash
+  # Windows
+  # Check MongoDB service status
+  sc query MongoDB
+
+  # Start MongoDB service
+  net start MongoDB
+  ```
 - MongoDB Atlas: Verify connection string and network access
+  - Ensure your IP is whitelisted in Atlas
+  - Check connection string format
+  - Verify username/password are correct
+
+**Test MongoDB connection:**
+```bash
+# Using MongoDB shell
+mongosh "mongodb://localhost:27017/careconnect"
+
+# Or using MongoDB client
+mongo mongodb://localhost:27017/careconnect
+```
 
 ### TypeScript Errors
 
@@ -195,6 +215,9 @@ git push origin master
 ## Next Steps
 
 After setup, proceed with:
-- Milestone 2: Database setup
-- Milestone 3: Authentication
+- ✅ Milestone 1: Foundation (completed)
+- ✅ Milestone 2: Database setup (completed)
+- ⏳ Milestone 3: Authentication
+- ⏳ Milestone 4: RBAC
+- ⏳ Milestone 5: Doctor Profiles
 - See project roadmap for full details
