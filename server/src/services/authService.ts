@@ -46,7 +46,7 @@ export function generateToken(userId: string, role: UserRole): string {
   const payload = { userId, role };
   return jwt.sign(payload, config.jwtSecret, {
     expiresIn: config.jwtExpiresIn,
-  });
+  } as jwt.SignOptions);
 }
 
 /**

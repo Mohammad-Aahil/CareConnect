@@ -3,5 +3,5 @@ export const config = {
   nodeEnv: process.env.NODE_ENV || 'development',
   mongoUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/careconnect',
   jwtSecret: process.env.JWT_SECRET || 'your-secret-key-here',
-  jwtExpiresIn: process.env.JWT_EXPIRES_IN || '7d',
+  jwtExpiresIn: (process.env.JWT_EXPIRES_IN || '7d') as string,
 };

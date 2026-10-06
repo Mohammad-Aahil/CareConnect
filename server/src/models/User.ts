@@ -65,9 +65,6 @@ const userSchema = new Schema<IUser>(
   }
 );
 
-// Index for email lookup
-userSchema.index({ email: 1 });
-
 // Method to exclude password when converting to JSON
 userSchema.methods.toJSON = function () {
   const user = this.toObject();
