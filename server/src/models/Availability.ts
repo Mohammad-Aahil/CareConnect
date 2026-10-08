@@ -40,9 +40,6 @@ const availabilitySchema = new Schema<IAvailability>(
   },
   {
     timestamps: true,
-    indexes: [
-      { doctorId: 1, dayOfWeek: 1 },
-    ],
   }
 );
 

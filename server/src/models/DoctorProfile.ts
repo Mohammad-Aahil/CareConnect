@@ -62,9 +62,6 @@ const doctorProfileSchema = new Schema<IDoctorProfile>(
   },
   {
     timestamps: true,
-    indexes: [
-      { userId: 1, unique: true },
-    ],
   }
 );
 
