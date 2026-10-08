@@ -217,7 +217,7 @@ git push origin master
 After setup, proceed with:
 - ✅ Milestone 1: Foundation (completed)
 - ✅ Milestone 2: Database setup (completed)
-- ⏳ Milestone 3: Authentication
+- ✅ Milestone 3: Authentication (completed)
 - ⏳ Milestone 4: RBAC
 - ⏳ Milestone 5: Doctor Profiles
 - See project roadmap for full details
